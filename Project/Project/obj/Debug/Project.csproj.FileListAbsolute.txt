@@ -10,3 +10,16 @@ D:\app\C#\Project\Project\obj\Debug\Project.Properties.Resources.resources
 D:\app\C#\Project\Project\obj\Debug\Project.csproj.GenerateResource.Cache
 D:\app\C#\Project\Project\obj\Debug\Project.exe
 D:\app\C#\Project\Project\obj\Debug\Project.pdb
+D:\laragon\www\C_CS2_PM2\C#\Project\Project\bin\Debug\Project.exe.config
+D:\laragon\www\C_CS2_PM2\C#\Project\Project\obj\Debug\Interop.SpeechLib.dll
+D:\laragon\www\C_CS2_PM2\C#\Project\Project\obj\Debug\Project.csproj.ResolveComReference.cache
+D:\laragon\www\C_CS2_PM2\C#\Project\Project\obj\Debug\Project.exe
+D:\laragon\www\C_CS2_PM2\C#\Project\Project\obj\Debug\Project.pdb
+D:\laragon\www\C_CS2_PM2\C#\Project\Project\bin\Debug\Project.exe
+D:\laragon\www\C_CS2_PM2\C#\Project\Project\bin\Debug\Project.pdb
+D:\laragon\www\C_CS2_PM2\C#\Project\Project\obj\Debug\Project.csprojResolveAssemblyReference.cache
+D:\laragon\www\C_CS2_PM2\C#\Project\Project\obj\Debug\Project.frmBathToKip.resources
+D:\laragon\www\C_CS2_PM2\C#\Project\Project\obj\Debug\Project.frmElectrictyBill.resources
+D:\laragon\www\C_CS2_PM2\C#\Project\Project\obj\Debug\Project.frmVoice.resources
+D:\laragon\www\C_CS2_PM2\C#\Project\Project\obj\Debug\Project.Properties.Resources.resources
+D:\laragon\www\C_CS2_PM2\C#\Project\Project\obj\Debug\Project.csproj.GenerateResource.Cache
