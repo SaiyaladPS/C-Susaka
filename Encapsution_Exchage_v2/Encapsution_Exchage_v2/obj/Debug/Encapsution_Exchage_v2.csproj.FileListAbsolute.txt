@@ -1,0 +1,6 @@
+D:\app\C#\Encapsution_Exchage_v2\Encapsution_Exchage_v2\bin\Debug\Encapsution_Exchage_v2.exe.config
+D:\app\C#\Encapsution_Exchage_v2\Encapsution_Exchage_v2\bin\Debug\Encapsution_Exchage_v2.exe
+D:\app\C#\Encapsution_Exchage_v2\Encapsution_Exchage_v2\bin\Debug\Encapsution_Exchage_v2.pdb
+D:\app\C#\Encapsution_Exchage_v2\Encapsution_Exchage_v2\obj\Debug\Encapsution_Exchage_v2.csprojResolveAssemblyReference.cache
+D:\app\C#\Encapsution_Exchage_v2\Encapsution_Exchage_v2\obj\Debug\Encapsution_Exchage_v2.exe
+D:\app\C#\Encapsution_Exchage_v2\Encapsution_Exchage_v2\obj\Debug\Encapsution_Exchage_v2.pdb

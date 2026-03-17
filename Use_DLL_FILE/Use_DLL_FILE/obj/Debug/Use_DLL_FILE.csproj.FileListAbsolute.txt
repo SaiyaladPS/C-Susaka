@@ -1,0 +1,12 @@
+D:\app\C#\Use_DLL_FILE\Use_DLL_FILE\bin\Debug\Use_DLL_FILE.exe.config
+D:\app\C#\Use_DLL_FILE\Use_DLL_FILE\bin\Debug\Use_DLL_FILE.exe
+D:\app\C#\Use_DLL_FILE\Use_DLL_FILE\bin\Debug\Use_DLL_FILE.pdb
+D:\app\C#\Use_DLL_FILE\Use_DLL_FILE\bin\Debug\ClassConveretMileToKilomat.dll
+D:\app\C#\Use_DLL_FILE\Use_DLL_FILE\bin\Debug\ClassConvert.dll
+D:\app\C#\Use_DLL_FILE\Use_DLL_FILE\bin\Debug\ClassConveretMileToKilomat.pdb
+D:\app\C#\Use_DLL_FILE\Use_DLL_FILE\bin\Debug\ClassConvert.pdb
+D:\app\C#\Use_DLL_FILE\Use_DLL_FILE\obj\Debug\Use_DLL_FILE.csprojResolveAssemblyReference.cache
+D:\app\C#\Use_DLL_FILE\Use_DLL_FILE\obj\Debug\Use_DLL_FILE.exe
+D:\app\C#\Use_DLL_FILE\Use_DLL_FILE\obj\Debug\Use_DLL_FILE.pdb
+D:\app\C#\Use_DLL_FILE\Use_DLL_FILE\bin\Debug\ClassConvertWeight.dll
+D:\app\C#\Use_DLL_FILE\Use_DLL_FILE\bin\Debug\ClassConvertWeight.pdb

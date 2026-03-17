@@ -1,0 +1,5 @@
+D:\app\C#\ClassConvertWeight\ClassConvertWeight\bin\Debug\ClassConvertWeight.dll
+D:\app\C#\ClassConvertWeight\ClassConvertWeight\bin\Debug\ClassConvertWeight.pdb
+D:\app\C#\ClassConvertWeight\ClassConvertWeight\obj\Debug\ClassConvertWeight.csprojResolveAssemblyReference.cache
+D:\app\C#\ClassConvertWeight\ClassConvertWeight\obj\Debug\ClassConvertWeight.dll
+D:\app\C#\ClassConvertWeight\ClassConvertWeight\obj\Debug\ClassConvertWeight.pdb

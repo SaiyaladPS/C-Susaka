@@ -1,0 +1,5 @@
+D:\app\C#\ClassConvert\ClassConvert\bin\Debug\ClassConvert.dll
+D:\app\C#\ClassConvert\ClassConvert\bin\Debug\ClassConvert.pdb
+D:\app\C#\ClassConvert\ClassConvert\obj\Debug\ClassConvert.csprojResolveAssemblyReference.cache
+D:\app\C#\ClassConvert\ClassConvert\obj\Debug\ClassConvert.dll
+D:\app\C#\ClassConvert\ClassConvert\obj\Debug\ClassConvert.pdb

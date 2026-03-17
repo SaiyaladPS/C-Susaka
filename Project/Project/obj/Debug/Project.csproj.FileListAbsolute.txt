@@ -1,0 +1,12 @@
+D:\app\C#\Project\Project\bin\Debug\Project.exe.config
+D:\app\C#\Project\Project\bin\Debug\Project.exe
+D:\app\C#\Project\Project\bin\Debug\Project.pdb
+D:\app\C#\Project\Project\obj\Debug\Project.csprojResolveAssemblyReference.cache
+D:\app\C#\Project\Project\obj\Debug\Interop.SpeechLib.dll
+D:\app\C#\Project\Project\obj\Debug\Project.csproj.ResolveComReference.cache
+D:\app\C#\Project\Project\obj\Debug\Project.frmBathToKip.resources
+D:\app\C#\Project\Project\obj\Debug\Project.frmVoice.resources
+D:\app\C#\Project\Project\obj\Debug\Project.Properties.Resources.resources
+D:\app\C#\Project\Project\obj\Debug\Project.csproj.GenerateResource.Cache
+D:\app\C#\Project\Project\obj\Debug\Project.exe
+D:\app\C#\Project\Project\obj\Debug\Project.pdb

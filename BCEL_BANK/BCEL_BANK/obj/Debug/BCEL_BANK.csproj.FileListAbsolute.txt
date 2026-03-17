@@ -1,0 +1,6 @@
+D:\app\C#\BCEL_BANK\BCEL_BANK\bin\Debug\BCEL_BANK.exe.config
+D:\app\C#\BCEL_BANK\BCEL_BANK\obj\Debug\BCEL_BANK.csprojResolveAssemblyReference.cache
+D:\app\C#\BCEL_BANK\BCEL_BANK\bin\Debug\BCEL_BANK.exe
+D:\app\C#\BCEL_BANK\BCEL_BANK\bin\Debug\BCEL_BANK.pdb
+D:\app\C#\BCEL_BANK\BCEL_BANK\obj\Debug\BCEL_BANK.exe
+D:\app\C#\BCEL_BANK\BCEL_BANK\obj\Debug\BCEL_BANK.pdb

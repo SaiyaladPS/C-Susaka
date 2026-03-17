@@ -1,0 +1,6 @@
+D:\app\C#\Encapsulation_Exchange\Encapsulation_Exchange\bin\Debug\Encapsulation_Exchange.exe.config
+D:\app\C#\Encapsulation_Exchange\Encapsulation_Exchange\bin\Debug\Encapsulation_Exchange.exe
+D:\app\C#\Encapsulation_Exchange\Encapsulation_Exchange\bin\Debug\Encapsulation_Exchange.pdb
+D:\app\C#\Encapsulation_Exchange\Encapsulation_Exchange\obj\Debug\Encapsulation_Exchange.csprojResolveAssemblyReference.cache
+D:\app\C#\Encapsulation_Exchange\Encapsulation_Exchange\obj\Debug\Encapsulation_Exchange.exe
+D:\app\C#\Encapsulation_Exchange\Encapsulation_Exchange\obj\Debug\Encapsulation_Exchange.pdb

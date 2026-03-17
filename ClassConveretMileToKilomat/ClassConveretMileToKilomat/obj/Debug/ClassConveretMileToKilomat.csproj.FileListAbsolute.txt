@@ -1,0 +1,4 @@
+D:\app\C#\ClassConveretMileToKilomat\ClassConveretMileToKilomat\bin\Debug\ClassConveretMileToKilomat.dll
+D:\app\C#\ClassConveretMileToKilomat\ClassConveretMileToKilomat\bin\Debug\ClassConveretMileToKilomat.pdb
+D:\app\C#\ClassConveretMileToKilomat\ClassConveretMileToKilomat\obj\Debug\ClassConveretMileToKilomat.dll
+D:\app\C#\ClassConveretMileToKilomat\ClassConveretMileToKilomat\obj\Debug\ClassConveretMileToKilomat.pdb
