@@ -81,12 +81,14 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.cbface = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(192, 23);
+            this.label1.Location = new System.Drawing.Point(197, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(112, 16);
             this.label1.TabIndex = 0;
@@ -128,7 +130,7 @@
             // 
             // btnCaloun
             // 
-            this.btnCaloun.Location = new System.Drawing.Point(125, 124);
+            this.btnCaloun.Location = new System.Drawing.Point(129, 141);
             this.btnCaloun.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCaloun.Name = "btnCaloun";
             this.btnCaloun.Size = new System.Drawing.Size(87, 28);
@@ -139,7 +141,7 @@
             // 
             // btnclar
             // 
-            this.btnclar.Location = new System.Drawing.Point(309, 124);
+            this.btnclar.Location = new System.Drawing.Point(309, 141);
             this.btnclar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnclar.Name = "btnclar";
             this.btnclar.Size = new System.Drawing.Size(87, 28);
@@ -543,11 +545,35 @@
             this.label12.TabIndex = 52;
             this.label12.Text = "ລ່ວມເປັນເງິນທີ່ຕ້ອງຈ່າຍ";
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(31, 105);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(25, 16);
+            this.label13.TabIndex = 53;
+            this.label13.Text = "ເຟດ";
+            // 
+            // cbface
+            // 
+            this.cbface.FormattingEnabled = true;
+            this.cbface.Items.AddRange(new object[] {
+            "1 face",
+            "2 face",
+            "3 face"});
+            this.cbface.Location = new System.Drawing.Point(65, 100);
+            this.cbface.Name = "cbface";
+            this.cbface.Size = new System.Drawing.Size(121, 24);
+            this.cbface.TabIndex = 54;
+            this.cbface.Text = "1 face";
+            // 
             // frmElectrictyBill
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(537, 612);
+            this.Controls.Add(this.cbface);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
@@ -665,5 +691,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.ComboBox cbface;
     }
 }
