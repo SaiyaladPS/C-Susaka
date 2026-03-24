@@ -16,7 +16,7 @@ namespace Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmElectrictyBill());
+            Application.Run(new frmCheckNumber());
         }
     }
 }

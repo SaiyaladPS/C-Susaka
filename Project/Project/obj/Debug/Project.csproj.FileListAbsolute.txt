@@ -23,3 +23,17 @@ D:\laragon\www\C_CS2_PM2\C#\Project\Project\obj\Debug\Project.frmElectrictyBill.
 D:\laragon\www\C_CS2_PM2\C#\Project\Project\obj\Debug\Project.frmVoice.resources
 D:\laragon\www\C_CS2_PM2\C#\Project\Project\obj\Debug\Project.Properties.Resources.resources
 D:\laragon\www\C_CS2_PM2\C#\Project\Project\obj\Debug\Project.csproj.GenerateResource.Cache
+E:\laragon\www\C-CS1-PM2\C-Susaka\Project\Project\bin\Debug\Project.exe.config
+E:\laragon\www\C-CS1-PM2\C-Susaka\Project\Project\obj\Debug\Interop.SpeechLib.dll
+E:\laragon\www\C-CS1-PM2\C-Susaka\Project\Project\obj\Debug\Project.csproj.ResolveComReference.cache
+E:\laragon\www\C-CS1-PM2\C-Susaka\Project\Project\obj\Debug\Project.exe
+E:\laragon\www\C-CS1-PM2\C-Susaka\Project\Project\obj\Debug\Project.pdb
+E:\laragon\www\C-CS1-PM2\C-Susaka\Project\Project\bin\Debug\Project.exe
+E:\laragon\www\C-CS1-PM2\C-Susaka\Project\Project\bin\Debug\Project.pdb
+E:\laragon\www\C-CS1-PM2\C-Susaka\Project\Project\obj\Debug\Project.csprojResolveAssemblyReference.cache
+E:\laragon\www\C-CS1-PM2\C-Susaka\Project\Project\obj\Debug\Project.frmBathToKip.resources
+E:\laragon\www\C-CS1-PM2\C-Susaka\Project\Project\obj\Debug\Project.frmElectrictyBill.resources
+E:\laragon\www\C-CS1-PM2\C-Susaka\Project\Project\obj\Debug\Project.frmVoice.resources
+E:\laragon\www\C-CS1-PM2\C-Susaka\Project\Project\obj\Debug\Project.Properties.Resources.resources
+E:\laragon\www\C-CS1-PM2\C-Susaka\Project\Project\obj\Debug\Project.csproj.GenerateResource.Cache
+E:\laragon\www\C-CS1-PM2\C-Susaka\Project\Project\obj\Debug\Project.frmCheckNumber.resources

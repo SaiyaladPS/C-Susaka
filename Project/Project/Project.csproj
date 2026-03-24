@@ -58,6 +58,12 @@
     <Compile Include="frmBathToKip.Designer.cs">
       <DependentUpon>frmBathToKip.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCheckNumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCheckNumber.Designer.cs">
+      <DependentUpon>frmCheckNumber.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmElectrictyBill.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmBathToKip.resx">
       <DependentUpon>frmBathToKip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCheckNumber.resx">
+      <DependentUpon>frmCheckNumber.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmElectrictyBill.resx">
       <DependentUpon>frmElectrictyBill.cs</DependentUpon>

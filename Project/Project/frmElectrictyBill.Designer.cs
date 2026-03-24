@@ -191,213 +191,263 @@
             this.txtR1.Location = new System.Drawing.Point(246, 220);
             this.txtR1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtR1.Name = "txtR1";
+            this.txtR1.ReadOnly = true;
             this.txtR1.Size = new System.Drawing.Size(91, 24);
             this.txtR1.TabIndex = 11;
             this.txtR1.Text = "563";
+            this.txtR1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtT1
             // 
             this.txtT1.Location = new System.Drawing.Point(371, 220);
             this.txtT1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtT1.Name = "txtT1";
+            this.txtT1.ReadOnly = true;
             this.txtT1.Size = new System.Drawing.Size(91, 24);
             this.txtT1.TabIndex = 12;
+            this.txtT1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtP1
             // 
             this.txtP1.Location = new System.Drawing.Point(125, 220);
             this.txtP1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtP1.Name = "txtP1";
+            this.txtP1.ReadOnly = true;
             this.txtP1.Size = new System.Drawing.Size(91, 24);
             this.txtP1.TabIndex = 13;
+            this.txtP1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox6
             // 
             this.textBox6.Location = new System.Drawing.Point(13, 220);
             this.textBox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox6.Name = "textBox6";
+            this.textBox6.ReadOnly = true;
             this.textBox6.Size = new System.Drawing.Size(91, 24);
             this.textBox6.TabIndex = 14;
             this.textBox6.Text = "0-25";
+            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox7
             // 
             this.textBox7.Location = new System.Drawing.Point(13, 252);
             this.textBox7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox7.Name = "textBox7";
+            this.textBox7.ReadOnly = true;
             this.textBox7.Size = new System.Drawing.Size(91, 24);
             this.textBox7.TabIndex = 18;
             this.textBox7.Text = "26-150";
+            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtP2
             // 
             this.txtP2.Location = new System.Drawing.Point(125, 252);
             this.txtP2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtP2.Name = "txtP2";
+            this.txtP2.ReadOnly = true;
             this.txtP2.Size = new System.Drawing.Size(91, 24);
             this.txtP2.TabIndex = 17;
+            this.txtP2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtT2
             // 
             this.txtT2.Location = new System.Drawing.Point(371, 252);
             this.txtT2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtT2.Name = "txtT2";
+            this.txtT2.ReadOnly = true;
             this.txtT2.Size = new System.Drawing.Size(91, 24);
             this.txtT2.TabIndex = 16;
+            this.txtT2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtR2
             // 
             this.txtR2.Location = new System.Drawing.Point(246, 252);
             this.txtR2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtR2.Name = "txtR2";
+            this.txtR2.ReadOnly = true;
             this.txtR2.Size = new System.Drawing.Size(91, 24);
             this.txtR2.TabIndex = 15;
             this.txtR2.Text = "648";
+            this.txtR2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox11
             // 
             this.textBox11.Location = new System.Drawing.Point(13, 284);
             this.textBox11.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox11.Name = "textBox11";
+            this.textBox11.ReadOnly = true;
             this.textBox11.Size = new System.Drawing.Size(91, 24);
             this.textBox11.TabIndex = 22;
             this.textBox11.Text = "151-300";
+            this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtP3
             // 
             this.txtP3.Location = new System.Drawing.Point(125, 284);
             this.txtP3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtP3.Name = "txtP3";
+            this.txtP3.ReadOnly = true;
             this.txtP3.Size = new System.Drawing.Size(91, 24);
             this.txtP3.TabIndex = 21;
+            this.txtP3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtT3
             // 
             this.txtT3.Location = new System.Drawing.Point(371, 284);
             this.txtT3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtT3.Name = "txtT3";
+            this.txtT3.ReadOnly = true;
             this.txtT3.Size = new System.Drawing.Size(91, 24);
             this.txtT3.TabIndex = 20;
+            this.txtT3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtR3
             // 
             this.txtR3.Location = new System.Drawing.Point(246, 284);
             this.txtR3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtR3.Name = "txtR3";
+            this.txtR3.ReadOnly = true;
             this.txtR3.Size = new System.Drawing.Size(91, 24);
             this.txtR3.TabIndex = 19;
             this.txtR3.Text = "1147";
+            this.txtR3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox15
             // 
             this.textBox15.Location = new System.Drawing.Point(13, 316);
             this.textBox15.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox15.Name = "textBox15";
+            this.textBox15.ReadOnly = true;
             this.textBox15.Size = new System.Drawing.Size(91, 24);
             this.textBox15.TabIndex = 26;
             this.textBox15.Text = "131-400";
+            this.textBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtP4
             // 
             this.txtP4.Location = new System.Drawing.Point(125, 316);
             this.txtP4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtP4.Name = "txtP4";
+            this.txtP4.ReadOnly = true;
             this.txtP4.Size = new System.Drawing.Size(91, 24);
             this.txtP4.TabIndex = 25;
+            this.txtP4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtT4
             // 
             this.txtT4.Location = new System.Drawing.Point(371, 316);
             this.txtT4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtT4.Name = "txtT4";
+            this.txtT4.ReadOnly = true;
             this.txtT4.Size = new System.Drawing.Size(91, 24);
             this.txtT4.TabIndex = 24;
+            this.txtT4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtR4
             // 
             this.txtR4.Location = new System.Drawing.Point(246, 316);
             this.txtR4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtR4.Name = "txtR4";
+            this.txtR4.ReadOnly = true;
             this.txtR4.Size = new System.Drawing.Size(91, 24);
             this.txtR4.TabIndex = 23;
             this.txtR4.Text = "1410";
+            this.txtR4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox19
             // 
             this.textBox19.Location = new System.Drawing.Point(13, 447);
             this.textBox19.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox19.Name = "textBox19";
+            this.textBox19.ReadOnly = true;
             this.textBox19.Size = new System.Drawing.Size(91, 24);
             this.textBox19.TabIndex = 42;
             this.textBox19.Text = ">=15001";
+            this.textBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtP8
             // 
             this.txtP8.Location = new System.Drawing.Point(125, 447);
             this.txtP8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtP8.Name = "txtP8";
+            this.txtP8.ReadOnly = true;
             this.txtP8.Size = new System.Drawing.Size(91, 24);
             this.txtP8.TabIndex = 41;
+            this.txtP8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtT8
             // 
             this.txtT8.Location = new System.Drawing.Point(371, 447);
             this.txtT8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtT8.Name = "txtT8";
+            this.txtT8.ReadOnly = true;
             this.txtT8.Size = new System.Drawing.Size(91, 24);
             this.txtT8.TabIndex = 40;
+            this.txtT8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtR8
             // 
             this.txtR8.Location = new System.Drawing.Point(246, 447);
             this.txtR8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtR8.Name = "txtR8";
+            this.txtR8.ReadOnly = true;
             this.txtR8.Size = new System.Drawing.Size(91, 24);
             this.txtR8.TabIndex = 39;
             this.txtR8.Text = "1696";
+            this.txtR8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox23
             // 
             this.textBox23.Location = new System.Drawing.Point(13, 415);
             this.textBox23.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox23.Name = "textBox23";
+            this.textBox23.ReadOnly = true;
             this.textBox23.Size = new System.Drawing.Size(91, 24);
             this.textBox23.TabIndex = 38;
             this.textBox23.Text = "1001-1500";
+            this.textBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtP7
             // 
             this.txtP7.Location = new System.Drawing.Point(125, 415);
             this.txtP7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtP7.Name = "txtP7";
+            this.txtP7.ReadOnly = true;
             this.txtP7.Size = new System.Drawing.Size(91, 24);
             this.txtP7.TabIndex = 37;
+            this.txtP7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtT7
             // 
             this.txtT7.Location = new System.Drawing.Point(371, 415);
             this.txtT7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtT7.Name = "txtT7";
+            this.txtT7.ReadOnly = true;
             this.txtT7.Size = new System.Drawing.Size(91, 24);
             this.txtT7.TabIndex = 36;
+            this.txtT7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtR7
             // 
             this.txtR7.Location = new System.Drawing.Point(246, 415);
             this.txtR7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtR7.Name = "txtR7";
+            this.txtR7.ReadOnly = true;
             this.txtR7.Size = new System.Drawing.Size(91, 24);
             this.txtR7.TabIndex = 35;
             this.txtR7.Text = "1628";
+            this.txtR7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox27
             // 
             this.textBox27.Location = new System.Drawing.Point(13, 383);
             this.textBox27.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox27.Name = "textBox27";
+            this.textBox27.ReadOnly = true;
             this.textBox27.Size = new System.Drawing.Size(91, 24);
             this.textBox27.TabIndex = 34;
             this.textBox27.Text = "501-1000";
+            this.textBox27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox27.TextChanged += new System.EventHandler(this.textBox27_TextChanged);
             // 
             // txtP6
@@ -405,67 +455,83 @@
             this.txtP6.Location = new System.Drawing.Point(125, 383);
             this.txtP6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtP6.Name = "txtP6";
+            this.txtP6.ReadOnly = true;
             this.txtP6.Size = new System.Drawing.Size(91, 24);
             this.txtP6.TabIndex = 33;
+            this.txtP6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtT6
             // 
             this.txtT6.Location = new System.Drawing.Point(371, 383);
             this.txtT6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtT6.Name = "txtT6";
+            this.txtT6.ReadOnly = true;
             this.txtT6.Size = new System.Drawing.Size(91, 24);
             this.txtT6.TabIndex = 32;
+            this.txtT6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtR6
             // 
             this.txtR6.Location = new System.Drawing.Point(246, 383);
             this.txtR6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtR6.Name = "txtR6";
+            this.txtR6.ReadOnly = true;
             this.txtR6.Size = new System.Drawing.Size(91, 24);
             this.txtR6.TabIndex = 31;
             this.txtR6.Text = "1564";
+            this.txtR6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox31
             // 
             this.textBox31.Location = new System.Drawing.Point(13, 351);
             this.textBox31.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox31.Name = "textBox31";
+            this.textBox31.ReadOnly = true;
             this.textBox31.Size = new System.Drawing.Size(91, 24);
             this.textBox31.TabIndex = 30;
             this.textBox31.Text = "401-500";
+            this.textBox31.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtP5
             // 
             this.txtP5.Location = new System.Drawing.Point(125, 351);
             this.txtP5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtP5.Name = "txtP5";
+            this.txtP5.ReadOnly = true;
             this.txtP5.Size = new System.Drawing.Size(91, 24);
             this.txtP5.TabIndex = 29;
+            this.txtP5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtT5
             // 
             this.txtT5.Location = new System.Drawing.Point(371, 351);
             this.txtT5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtT5.Name = "txtT5";
+            this.txtT5.ReadOnly = true;
             this.txtT5.Size = new System.Drawing.Size(91, 24);
             this.txtT5.TabIndex = 28;
+            this.txtT5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtR5
             // 
             this.txtR5.Location = new System.Drawing.Point(246, 351);
             this.txtR5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtR5.Name = "txtR5";
+            this.txtR5.ReadOnly = true;
             this.txtR5.Size = new System.Drawing.Size(91, 24);
             this.txtR5.TabIndex = 27;
             this.txtR5.Text = "1519";
+            this.txtR5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtPower
             // 
             this.txtPower.Location = new System.Drawing.Point(418, 70);
             this.txtPower.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPower.Name = "txtPower";
+            this.txtPower.ReadOnly = true;
             this.txtPower.Size = new System.Drawing.Size(103, 24);
             this.txtPower.TabIndex = 44;
+            this.txtPower.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtPower.TextChanged += new System.EventHandler(this.textBox35_TextChanged);
             // 
             // label8
@@ -482,32 +548,41 @@
             this.txtAmount.Location = new System.Drawing.Point(371, 575);
             this.txtAmount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtAmount.Name = "txtAmount";
+            this.txtAmount.ReadOnly = true;
             this.txtAmount.Size = new System.Drawing.Size(91, 24);
             this.txtAmount.TabIndex = 48;
+            this.txtAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtTax
             // 
             this.txtTax.Location = new System.Drawing.Point(371, 543);
             this.txtTax.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTax.Name = "txtTax";
+            this.txtTax.ReadOnly = true;
             this.txtTax.Size = new System.Drawing.Size(91, 24);
             this.txtTax.TabIndex = 47;
+            this.txtTax.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtMaintain
             // 
             this.txtMaintain.Location = new System.Drawing.Point(371, 511);
             this.txtMaintain.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMaintain.Name = "txtMaintain";
+            this.txtMaintain.ReadOnly = true;
             this.txtMaintain.Size = new System.Drawing.Size(91, 24);
             this.txtMaintain.TabIndex = 46;
+            this.txtMaintain.Text = "21,300";
+            this.txtMaintain.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtTotal
             // 
             this.txtTotal.Location = new System.Drawing.Point(371, 479);
             this.txtTotal.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTotal.Name = "txtTotal";
+            this.txtTotal.ReadOnly = true;
             this.txtTotal.Size = new System.Drawing.Size(91, 24);
             this.txtTotal.TabIndex = 45;
+            this.txtTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label9
             // 
@@ -566,6 +641,7 @@
             this.cbface.Size = new System.Drawing.Size(121, 24);
             this.cbface.TabIndex = 54;
             this.cbface.Text = "1 face";
+            this.cbface.SelectedIndexChanged += new System.EventHandler(this.cbface_SelectedIndexChanged);
             // 
             // frmElectrictyBill
             // 

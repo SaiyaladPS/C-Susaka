@@ -30,8 +30,6 @@ namespace Project
         private void btnCaloun_Click(object sender, EventArgs e)
         {
             int power;
-            int P1, P2, P3, P4, P5, P6, P7, P8;
-            int R1, R2, R3, R4, R5, R6, R7, R8;
             int T1, T2, T3, T4, T5, T6, T7, T8;
 
             power = int.Parse(txtNow.Text) - int.Parse(txtBefore.Text);
@@ -204,11 +202,29 @@ namespace Project
 
             int total = T1 + T2 + T3 + T4 + T5 + T6 + T7 + T8;
             txtTotal.Text = total.ToString("#,###");
-            int maintain = 46600;
-            txtMaintain.Text = maintain.ToString("#,###");
-            double tax = (total + maintain) * 0.1;
+            string maintain;
+            maintain = txtMaintain.Text;
+            maintain = maintain.Replace(",", "");
+            double tax = (total + int.Parse(maintain)) * 0.1;
             txtTax.Text = tax.ToString("#,###");
-            txtAmount.Text = (total + maintain + tax).ToString("#,###");
+            txtAmount.Text = (total + int.Parse(maintain) + tax).ToString("#,###");
+        }
+
+        private void cbface_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(cbface.SelectedIndex == 0)
+            {
+                txtMaintain.Text = "21,300";
+            } else if (cbface.SelectedIndex == 1)
+            {
+                txtMaintain.Text = "46,600";
+            } else if (cbface.SelectedIndex == 2)
+            {
+                txtMaintain.Text = "6,000";
+            } else if (cbface.SelectedIndex == 3)
+            {
+                txtMaintain.Text = "12,600";
+            }
         }
     }
 }
