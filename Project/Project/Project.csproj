@@ -64,6 +64,12 @@
     <Compile Include="frmCheckNumber.Designer.cs">
       <DependentUpon>frmCheckNumber.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmConvertNumberToWord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConvertNumberToWord.Designer.cs">
+      <DependentUpon>frmConvertNumberToWord.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmElectrictyBill.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCheckNumber.resx">
       <DependentUpon>frmCheckNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConvertNumberToWord.resx">
+      <DependentUpon>frmConvertNumberToWord.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmElectrictyBill.resx">
       <DependentUpon>frmElectrictyBill.cs</DependentUpon>

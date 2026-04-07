@@ -37,3 +37,4 @@ E:\laragon\www\C-CS1-PM2\C-Susaka\Project\Project\obj\Debug\Project.frmVoice.res
 E:\laragon\www\C-CS1-PM2\C-Susaka\Project\Project\obj\Debug\Project.Properties.Resources.resources
 E:\laragon\www\C-CS1-PM2\C-Susaka\Project\Project\obj\Debug\Project.csproj.GenerateResource.Cache
 E:\laragon\www\C-CS1-PM2\C-Susaka\Project\Project\obj\Debug\Project.frmCheckNumber.resources
+E:\laragon\www\C-CS1-PM2\C-Susaka\Project\Project\obj\Debug\Project.frmConvertNumberToWord.resources
