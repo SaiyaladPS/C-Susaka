@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Speech.Synthesis;
 
 namespace Project
 {
     public partial class frmConvertNumberToWord : Form
     {
+        SpeechSynthesizer speaker = new SpeechSynthesizer();
         public frmConvertNumberToWord()
         {
             InitializeComponent();
@@ -104,6 +106,8 @@ namespace Project
             if (int.TryParse(txtNumber.Text, out number))
             {
                 lbResult.Text = NumberToWordEN(number);
+                speaker.SpeakAsyncCancelAll();
+                speaker.SpeakAsync(number.ToString());
             }
             else
             {

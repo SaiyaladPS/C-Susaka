@@ -38,3 +38,7 @@ E:\laragon\www\C-CS1-PM2\C-Susaka\Project\Project\obj\Debug\Project.Properties.R
 E:\laragon\www\C-CS1-PM2\C-Susaka\Project\Project\obj\Debug\Project.csproj.GenerateResource.Cache
 E:\laragon\www\C-CS1-PM2\C-Susaka\Project\Project\obj\Debug\Project.frmCheckNumber.resources
 E:\laragon\www\C-CS1-PM2\C-Susaka\Project\Project\obj\Debug\Project.frmConvertNumberToWord.resources
+E:\laragon\www\C-CS1-PM2\C-Susaka\Project\Project\obj\Debug\Project.frmCategory.resources
+E:\laragon\www\C-CS1-PM2\C-Susaka\Project\Project\obj\Debug\Project.frmProduct.resources
+E:\laragon\www\C-CS1-PM2\C-Susaka\Project\Project\obj\Debug\Project.frmUnit.resources
+E:\laragon\www\C-CS1-PM2\C-Susaka\Project\Project\obj\Debug\Project.exe.licenses
