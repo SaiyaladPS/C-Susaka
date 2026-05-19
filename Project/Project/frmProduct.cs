@@ -390,7 +390,7 @@ namespace Project
             p.productID,
             p.productName,
             p.price,
-            p.qty,
+            p.qty,  
             u.unitName,
             c.categoryName
         FROM tbProduct p
