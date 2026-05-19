@@ -290,6 +290,7 @@
             // 
             // txtProductID
             // 
+            this.txtProductID.Enabled = false;
             this.txtProductID.Location = new System.Drawing.Point(110, 50);
             this.txtProductID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtProductID.Name = "txtProductID";

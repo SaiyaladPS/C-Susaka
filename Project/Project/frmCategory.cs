@@ -8,10 +8,7 @@ namespace Project
     public partial class frmCategory : Form
     {
 
-        string strcon = "Data source=DESKTOP-V2EDS8D; initial catalog=dbMinimartBCSP6E; integrated security=true";
-        SqlConnection conn = new SqlConnection();
-        DataSet ds = new DataSet();
-        SqlCommand cmd = new SqlCommand();
+        DBConnection db = new DBConnection();
 
         public frmCategory()
         {
@@ -23,7 +20,6 @@ namespace Project
 
         private void frmCategory_Load(object sender, EventArgs e)
         {
-            conn.ConnectionString = strcon;
             DGV.AutoSizeColumnsMode =
                 DataGridViewAutoSizeColumnsMode.Fill;
             ShowData();
@@ -32,110 +28,140 @@ namespace Project
 
         void AutoId()
         {
-            using (SqlDataAdapter da = new SqlDataAdapter(
-                "SELECT COUNT(*) AS count FROM tbCategory", conn))
+            using (SqlConnection conn = db.GetConnection())
             {
-                DataTable dt = new DataTable();
-                da.Fill(dt);
+                conn.Open();
 
-                int count = Convert.ToInt32(dt.Rows[0]["count"]) + 1;
+                string sql = "SELECT MAX(categoryID) FROM tbCategory";
+                SqlCommand cmd = new SqlCommand(sql, conn);
 
-                txtCategoryID.Text = count.ToString();
+                object result = cmd.ExecuteScalar();
+
+                if (result == DBNull.Value || result == null)
+                {
+                    txtCategoryID.Text = "0";
+                }
+                else
+                {
+                    string lastID = result.ToString(); // CAT-005
+
+                    int number = int.Parse(lastID); // remove "CAT-"
+
+                    number++;
+
+                    txtCategoryID.Text = number.ToString();
+                }
             }
         }
 
         void ShowData()
         {
-            try
+            using (SqlConnection conn = db.GetConnection())
             {
-                ds.Tables.Clear();
+                conn.Open();
 
-                using (SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM tbCategory", conn))
-                {
-                    da.Fill(ds, "Category");
-                }
+                string sql = "SELECT * FROM tbCategory";
+                SqlDataAdapter da = new SqlDataAdapter(sql, conn);
 
-                if (ds.Tables["Category"].Rows.Count > 0)
-                {
-                    DGV.DataSource = ds.Tables["Category"];
-                    DGV.Columns[0].HeaderText = "Category ID";
-                    DGV.Columns[1].HeaderText = "Category Name";
-                }
-                else
-                {
-                    DGV.DataSource = null;
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex.Message);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                DGV.DataSource = dt;
+
+                DGV.Columns["categoryID"].HeaderText = "Category ID";
+                DGV.Columns["categoryName"].HeaderText = "Category Name";
+
+                DGV.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                DGV.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+                DGV.ReadOnly = true;
             }
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            try
+            using (SqlConnection conn = db.GetConnection())
             {
-                if (conn.State != ConnectionState.Open)
+                try
                 {
+                    // ❌ Input validation
+                    if (string.IsNullOrWhiteSpace(txtCategoryID.Text))
+                    {
+                        MessageBox.Show("Please enter Category ID");
+                        txtCategoryID.Focus();
+                        return;
+                    }
+
+                    if (string.IsNullOrWhiteSpace(txtCategoryName.Text))
+                    {
+                        MessageBox.Show("Please enter Category Name");
+                        txtCategoryName.Focus();
+                        return;
+                    }
+
                     conn.Open();
+
+                    string sql = "INSERT INTO tbCategory (categoryID, categoryName) VALUES (@categoryID, @categoryName)";
+                    SqlCommand cmd = new SqlCommand(sql, conn);
+
+                    cmd.Parameters.Add("@categoryID", SqlDbType.NVarChar).Value = txtCategoryID.Text.Trim();
+                    cmd.Parameters.Add("@categoryName", SqlDbType.NVarChar).Value = txtCategoryName.Text.Trim();
+
+                    int result = cmd.ExecuteNonQuery();
+
+                    if (result > 0)
+                    {
+                        MessageBox.Show(
+                            "Save successful",
+                            "Success",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Information
+                        );
+
+                        txtCategoryID.Clear();
+                        txtCategoryName.Clear();
+                        txtCategoryName.Focus();
+
+                        ShowData();
+                        AutoId();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Insert failed");
+                    }
                 }
-
-                cmd = new SqlCommand("INSERT INTO tbCategory (categoryID, categoryName) VALUES (@categoryID, @categoryName)", conn);
-
-                cmd.Parameters.Add("@categoryID", SqlDbType.Int).Value = int.Parse(txtCategoryID.Text);
-                cmd.Parameters.Add("@categoryName", SqlDbType.NVarChar).Value = txtCategoryName.Text;
-
-                cmd.ExecuteNonQuery();
-
-                MessageBox.Show(
-                    "Save successful",
-                    "Success",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Information
-                );
-
-                ShowData();
-
-                txtCategoryID.Clear();
-                txtCategoryName.Clear();
-                txtCategoryID.Focus();
-
-                AutoId();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex.Message);
-            }
-            finally
-            {
-                if (conn.State == ConnectionState.Open)
+                catch (Exception ex)
                 {
-                    conn.Close();
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+                finally
+                {
+                    if (conn.State == ConnectionState.Open)
+                    {
+                        conn.Close();
+                    }
                 }
             }
         }
 
         private void DGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex < 0 || DGV.Rows[e.RowIndex].Cells[0].Value == null)
-            {
-                return;
-            }
+            if (e.RowIndex < 0) return;
 
             try
             {
                 DataGridViewRow row = DGV.Rows[e.RowIndex];
 
-                txtCategoryID.Text = row.Cells["categoryID"].Value?.ToString() ?? "";
-                txtCategoryName.Text = row.Cells["categoryName"].Value?.ToString() ?? "";
+                if (row.Cells["categoryID"].Value == null) return;
+
+                txtCategoryID.Text = row.Cells["categoryID"].Value.ToString();
+                txtCategoryName.Text = row.Cells["categoryName"].Value.ToString();
 
                 txtCategoryName.Focus();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(
-                    "Error : " + ex.Message,
+                    "Error: " + ex.Message,
                     "System",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error
@@ -145,93 +171,111 @@ namespace Project
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtCategoryID.Text))
+           using(SqlConnection conn = db.GetConnection())
             {
-                MessageBox.Show("Please select data category id");
-                return;
-            }
-
-            if (string.IsNullOrWhiteSpace(txtCategoryName.Text))
-            {
-                MessageBox.Show("Please select data category name");
-                return;
-            }
-
-            try
-            {
-                if (conn.State != ConnectionState.Open)
+                if (string.IsNullOrWhiteSpace(txtCategoryID.Text))
                 {
-                    conn.Open();
+                    MessageBox.Show("Please select category ID");
+                    return;
                 }
-                cmd = new SqlCommand(
-                "UPDATE tbCategory SET categoryName = @categoryName WHERE categoryID = @categoryID", conn);
 
-                cmd.Parameters.Add("@categoryID", SqlDbType.Int).Value = int.Parse(txtCategoryID.Text);
-                cmd.Parameters.Add("@categoryName", SqlDbType.NVarChar).Value = txtCategoryName.Text;
+                if (string.IsNullOrWhiteSpace(txtCategoryName.Text))
+                {
+                    MessageBox.Show("Please select category name");
+                    return;
+                }
 
-                cmd.ExecuteNonQuery();
+                try
+                {
+                    if (conn.State != ConnectionState.Open)
+                    {
+                        conn.Open();
+                    }
 
-                MessageBox.Show("Update success");
+                    SqlCommand cmd = new SqlCommand(
+                        "UPDATE tbCategory SET categoryName = @categoryName WHERE categoryID = @categoryID",
+                        conn);
 
-                ShowData();
+                    cmd.Parameters.Add("@categoryID", SqlDbType.NVarChar).Value = txtCategoryID.Text.Trim();
+                    cmd.Parameters.Add("@categoryName", SqlDbType.NVarChar).Value = txtCategoryName.Text.Trim();
 
-                txtCategoryID.Clear();
-                txtCategoryName.Clear();
-                txtCategoryID.Focus();
+                    int result = cmd.ExecuteNonQuery();
 
-                AutoId();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex.Message);
+                    if (result > 0)
+                    {
+                        MessageBox.Show("Update success");
+
+                        ShowData();
+
+                        txtCategoryID.Clear();
+                        txtCategoryName.Clear();
+                        txtCategoryName.Focus();
+
+                        AutoId();
+                    }
+                    else
+                    {
+                        MessageBox.Show("No data found to update");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
             }
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtCategoryID.Text))
+            using (SqlConnection conn = db.GetConnection())
             {
-                MessageBox.Show("Please select data category id");
-                return;
-            }
-
-            if (string.IsNullOrWhiteSpace(txtCategoryName.Text))
-            {
-                MessageBox.Show("Please select data category name");
-                return;
-            }
-
-            try
-            {
-                if (conn.State != ConnectionState.Open)
+                if (string.IsNullOrWhiteSpace(txtCategoryID.Text))
                 {
-                    conn.Open();
+                    MessageBox.Show("Please select category ID");
+                    return;
                 }
-                cmd = new SqlCommand(
-                "DELETE FROM tbCategory WHERE categoryID = @categoryID", conn);
 
-                cmd.Parameters.Add("@categoryID", SqlDbType.Int).Value = int.Parse(txtCategoryID.Text);
+                try
+                {
+                    if (conn.State != ConnectionState.Open)
+                    {
+                        conn.Open();
+                    }
 
-                cmd.ExecuteNonQuery();
+                    SqlCommand cmd = new SqlCommand(
+                        "DELETE FROM tbCategory WHERE categoryID = @categoryID",
+                        conn);
 
-                MessageBox.Show(
-                     "Delete successful",
-                     "Success",
-                     MessageBoxButtons.OK,
-                     MessageBoxIcon.Information
-                 );
+                    cmd.Parameters.Add("@categoryID", SqlDbType.NVarChar).Value = txtCategoryID.Text.Trim();
 
-                ShowData();
+                    int result = cmd.ExecuteNonQuery();
 
-                txtCategoryID.Clear();
-                txtCategoryName.Clear();
-                txtCategoryID.Focus();
+                    if (result > 0)
+                    {
+                        MessageBox.Show(
+                            "Delete successful",
+                            "Success",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Information
+                        );
 
-                AutoId();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex.Message);
+                        ShowData();
+
+                        txtCategoryID.Clear();
+                        txtCategoryName.Clear();
+                        txtCategoryName.Focus();
+
+                        AutoId();
+                    }
+                    else
+                    {
+                        MessageBox.Show("No data found to delete");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
             }
         }
     }
