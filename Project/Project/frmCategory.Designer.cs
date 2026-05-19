@@ -52,11 +52,12 @@
             this.groupBox1.Controls.Add(this.txtCategoryID);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(15, 16);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(400, 174);
+            this.groupBox1.Size = new System.Drawing.Size(433, 174);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "ຈັດການຂໍ້ມູນປະເພດສີນຄ້າ";
@@ -80,6 +81,7 @@
             this.btnDelete.TabIndex = 6;
             this.btnDelete.Text = "ລືບ";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnEdit
             // 
@@ -113,6 +115,7 @@
             // 
             // txtCategoryID
             // 
+            this.txtCategoryID.Enabled = false;
             this.txtCategoryID.Location = new System.Drawing.Point(143, 22);
             this.txtCategoryID.Margin = new System.Windows.Forms.Padding(4);
             this.txtCategoryID.Name = "txtCategoryID";
@@ -142,10 +145,11 @@
             // DGV
             // 
             this.DGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGV.Location = new System.Drawing.Point(15, 193);
+            this.DGV.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.DGV.Location = new System.Drawing.Point(0, 195);
             this.DGV.Margin = new System.Windows.Forms.Padding(4);
             this.DGV.Name = "DGV";
-            this.DGV.Size = new System.Drawing.Size(399, 226);
+            this.DGV.Size = new System.Drawing.Size(433, 226);
             this.DGV.TabIndex = 1;
             this.DGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_CellContentClick);
             // 
